@@ -1,5 +1,55 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background: rgb(0, 140, 9);
+}
+
+.cardrandom {
+    background: rgb(255, 255, 255);
+    height: 800px;
+    width: 600px;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+
+.cardBody {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 900%;
+}
+
+.iconos {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.cardHead {
+    margin-top: 15px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.cardFooter {
+    transform: rotate(180deg);
+    flex-direction: column;
+    padding-top: 15px;
+    height: 100%;
+
+}
+
+i {
+    display: flex;
+    align-items: center;
+
+    font-size: 95px;
 }
