@@ -21,21 +21,15 @@ window.onload = function () {
     }
     document.querySelector(".cardFooter").innerHTML = `<strong>${random}</strong>`
     document.querySelector(".cardHead").innerHTML = `<strong>${random}</strong>`
-    return random
+    return;
   }
-  let paloActual = randomPalo();
 
   const randomValue = function () {
     let random = valueCard[Math.floor(Math.random() * valueCard.length)]
-    if (paloActual === "♦" || paloActual === "♥") {
-      document.querySelector(".cardBody").style.color = "red";
-    } else {
-      document.querySelector(".cardBody").style.color = "black";
-    }
-
     document.querySelector(".cardBody").innerHTML = `<h1>${random}</h1>`
-
+    return;
   }
+  randomPalo();
   randomValue();
 
 
